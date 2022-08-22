@@ -1,24 +1,32 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link :to="{ name: 'home' }">Home</router-link> |
-      <router-link :to="{ name: 'article-create' }">Create Article</router-link>
-    </nav>
+    <NavBar />
     <router-view/>
   </div>
 </template>
 
+<script lang='ts'>
+import NavBar from '@/components/NavBar.vue'
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
   text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+body.dark-mode {
+  background-color: #282c35;
 }
 
 nav a {
@@ -27,6 +35,10 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: lightslategray;
+}
+
+a {
+  background-color: transparent;
 }
 </style>

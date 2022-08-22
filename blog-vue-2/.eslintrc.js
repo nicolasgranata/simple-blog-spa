@@ -14,8 +14,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'typescript.format.insertSpaceBeforeFunctionParenthesis': 0,
-    'typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions': 0
+    'space-before-function-paren': 'off'
   },
   overrides: [
     {
