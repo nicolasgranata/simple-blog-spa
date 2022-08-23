@@ -1,0 +1,18 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "author": "John Doe",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula et sem et lobortis. Phasellus consequat convallis auctor. Nulla turpis turpis, faucibus ut mi et, dictum efficitur arcu. Integer venenatis interdum tincidunt.",
+            "title": "Nunc non congue libero. Curabitur.",
+            "date": "August 22, 2022"
+        },
+        {
+            "id": 2,
+            "author": "Jane Doe",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula et sem et lobortis. Phasellus consequat convallis auctor. Nulla turpis turpis, faucibus ut mi et, dictum efficitur arcu. Integer venenatis interdum tincidunt.",
+            "title": "Aenean non pretium nisl.",
+            "date": "August 22, 2022"
+        }
+    ]
+}

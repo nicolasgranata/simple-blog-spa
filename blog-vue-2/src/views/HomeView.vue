@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Blog example using Vue2</h1>
-        <h2>A blog example using Vue2</h2>
+    <div class="header">
+        <h1 class="title">Blog example using Vue2</h1>
+        <h2 class="sub-title">A blog example using Vue2</h2>
         <div class="container">
            <ArticleCard class="item" v-for="article in this.articles" :key="article.id"
             :author="article.author"
@@ -16,6 +16,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import ArticleCard from '@/components/ArticleCard.vue'
+import Article from '../models'
 
 @Component({
   components: {
@@ -23,7 +24,7 @@ import ArticleCard from '@/components/ArticleCard.vue'
   }
 })
 export default class HomeView extends Vue {
-  public articles: any[] = [];
+  public articles: Article[] = [];
 
   created() {
     this.articles.push({
@@ -73,11 +74,31 @@ export default class HomeView extends Vue {
 </script>
 
 <style scoped>
+.header {
+  text-align: center;
+}
+
+.title {
+  color: #2c3e50;
+  font-weight: 900;
+  font-family: Montserrat, 'Open Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  color: #2c3e50;
+  font-weight: 700;
+  font-family: Montserrat, 'Open Sans', sans-serif;
+  font-size: medium;
+  margin-top: 0;
+}
+
 .container {
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 
 .item {
@@ -90,11 +111,15 @@ export default class HomeView extends Vue {
   }
 }
 
-  .dark-mode .container {
-    background-color: #282c35;
-  }
+.dark-mode .container {
+  background-color: #282c35;
+}
 
-.dark-mode h1, h2 {
-  color: lightslategray
+.dark-mode h1 {
+  color: lightgrey;
+}
+
+.dark-mode h2 {
+  color: lightgrey;
 }
 </style>

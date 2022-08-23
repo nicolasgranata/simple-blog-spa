@@ -35,7 +35,8 @@ export default class ArticleCard extends Vue {
 .article-link {
   color: black;
   text-decoration: none;
-  font-family: Montserrat, 'Open Sans',sans-serif;
+  font-weight: 900;
+  font-family: Montserrat, 'Open Sans', sans-serif;
   font-size: 1.75rem;
 }
 
