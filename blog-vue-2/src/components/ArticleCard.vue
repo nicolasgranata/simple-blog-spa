@@ -3,26 +3,24 @@
       <h3>
         <router-link
           class="article-link"
-          :to="{ name: 'article-detail', params: { id: '1' } }"
-        >{{ title }}</router-link>
+          :to="{ name: 'article-detail', params: { id: article.id, article: article } }"
+        >{{ article.title }}</router-link>
       </h3>
-      <p>{{ body }}</p>
+      <p>{{ article.body }}</p>
       <small class="article-posted-by">{{ getPostedBy()}}</small>
     </article>
 </template>
 
 <script lang="ts">
+import Article from '@/models';
 import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class ArticleCard extends Vue {
-  @Prop({ default: '' }) public title!: string;
-  @Prop({ default: '' }) public body!: string;
-  @Prop({ default: '' }) public date!: string;
-  @Prop({ default: '' }) public author!: string;
+  @Prop({ default: null }) public article!: Article;
 
   public getPostedBy(): string {
-    return `Posted by ${this.author} on ${this.date}`
+    return `Posted by ${this.article.author} on ${this.article.date}`
   }
 }
 </script>

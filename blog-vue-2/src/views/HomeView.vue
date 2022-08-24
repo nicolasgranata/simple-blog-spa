@@ -1,16 +1,15 @@
 <template>
+<div>
     <div class="header">
         <h1 class="title">Blog example using Vue2</h1>
         <h2 class="sub-title">A blog example using Vue2</h2>
-        <div class="container">
-           <ArticleCard class="item" v-for="article in this.articles" :key="article.id"
-            :author="article.author"
-            :body="article.body"
-            :title="article.title"
-            :date="article.date"
-          />
-        </div>
     </div>
+    <div class="container">
+           <ArticleCard class="item" v-for="article in this.articles" :key="article.id"
+            :article="article"
+          />
+    </div>
+</div>
 </template>
 
 <script lang="ts">
