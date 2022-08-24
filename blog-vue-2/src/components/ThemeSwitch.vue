@@ -68,11 +68,11 @@ export default class ThemeSwitch extends Vue {
   private applyTheme(themeValue: string): void {
     if (themeValue === 'dark') {
       document.body.classList.toggle('dark-mode');
+      this.themeIcon = 'fa-solid fa-moon';
     } else {
       document.body.classList.remove('dark-mode');
+      this.themeIcon = 'fa-solid fa-lightbulb';
     }
-
-    this.themeIcon = themeValue === 'light' ? 'fa-solid fa-lightbulb' : 'fa-solid fa-moon';
   }
 }
 </script>
