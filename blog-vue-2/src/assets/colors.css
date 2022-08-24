@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --main-bg-color: #f9fafb;
+    --primary-color: #23313f;
+    --secondary-color: #2c3e50;
+    --active-link-color: #66717c;
+
+    /* Dark mode colors */
+    --main-bg-color-dark-mode: #121212;
+    --primary-color-dark-mode: #d4d4d4;
+    --secondary-color-dark-mode: #a6a7a8;
+    --link-text-color-dark-mode: #ffffff;
+    --active-link-color-dark-mode: #bdbdbd;
+}

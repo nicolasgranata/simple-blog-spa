@@ -5,7 +5,6 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-/* import specific icons */
 import { faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faLightbulb, faMoon)

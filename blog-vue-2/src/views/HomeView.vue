@@ -79,17 +79,18 @@ export default class HomeView extends Vue {
 }
 
 .title {
-  color: #2c3e50;
+  color: var(--primary-color);
   font-weight: 900;
   font-family: Montserrat, 'Open Sans', sans-serif;
   margin-bottom: 0;
+  font-size: 2.5rem;
 }
 
 .sub-title {
-  color: #2c3e50;
+  color: var(--primary-color);
   font-weight: 700;
   font-family: Montserrat, 'Open Sans', sans-serif;
-  font-size: medium;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 
@@ -112,14 +113,14 @@ export default class HomeView extends Vue {
 }
 
 .dark-mode .container {
-  background-color: #282c35;
+  background-color: var(--main-bg-color-dark-mode);
 }
 
-.dark-mode h1 {
-  color: lightgrey;
+.dark-mode .title {
+  color: var(--primary-color-dark-mode);
 }
 
-.dark-mode h2 {
-  color: lightgrey;
+.dark-mode .sub-title {
+  color: var(--primary-color-dark-mode);
 }
 </style>

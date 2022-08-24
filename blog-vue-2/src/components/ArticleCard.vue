@@ -33,7 +33,7 @@ export default class ArticleCard extends Vue {
 }
 
 .article-link {
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 900;
   font-family: Montserrat, 'Open Sans', sans-serif;
@@ -41,7 +41,7 @@ export default class ArticleCard extends Vue {
 }
 
 .dark-mode .article-link {
-  color: lightgrey;
+  color: var(--primary-color-dark-mode);
 }
 
 .article-posted-by {
@@ -49,10 +49,10 @@ export default class ArticleCard extends Vue {
 }
 
 .dark-mode .article-posted-by {
-  color: lightslategray;
+  color: var(--secondary-color-dark-mode);
 }
 
 .dark-mode p {
-  color: lightgrey;
+  color: var(--primary-color-dark-mode);
 }
 </style>
